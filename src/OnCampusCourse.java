@@ -40,10 +40,4 @@ public abstract class OnCampusCourse implements Course{
     public void enrollStudent(Student student) {
         this.enrolledStudents.add(student);
     }
-
-    @Override
-    public void unenrollStudent(Student student) {
-        System.out.println("Un-enrolling student: "+student);
-        this.enrolledStudents.remove(student);
-    }
 }

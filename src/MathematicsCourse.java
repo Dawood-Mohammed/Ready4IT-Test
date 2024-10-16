@@ -9,4 +9,10 @@ public class MathematicsCourse extends OnCampusCourse{
         System.out.println("******* Displaying Mathematics Enrolled Students *******");
         super.enrolledStudents.forEach(System.out::println);
     }
+
+    @Override
+    public void unenrollStudent(Student student) {
+        System.out.println("Un-enrolling student: "+student+" from Mathematics Course");
+        this.enrolledStudents.remove(student);
+    }
 }

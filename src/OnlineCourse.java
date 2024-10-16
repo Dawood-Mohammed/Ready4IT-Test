@@ -40,9 +40,4 @@ public abstract class OnlineCourse implements Course{
     public void enrollStudent(Student student) {
         this.enrolledStudents.add(student);
     }
-
-    @Override
-    public void unenrollStudent(Student student) {
-        this.enrolledStudents.remove(student);
-    }
 }

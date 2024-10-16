@@ -8,4 +8,10 @@ public class ProgrammingCourse extends OnlineCourse{
         System.out.println("******* Displaying Programming Enrolled Students *******");
         super.enrolledStudents.forEach(System.out::println);
     }
+
+    @Override
+    public void unenrollStudent(Student student) {
+        System.out.println("Un-enrolling Student: "+student+" from Programming Course");
+        this.enrolledStudents.remove(student);
+    }
 }
